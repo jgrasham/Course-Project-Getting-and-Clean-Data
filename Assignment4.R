@@ -1,5 +1,8 @@
 #
-# The R Run Script for Getting and Cleaning Data Course Project
+# The Assignment4.R Run Script for the Getting and Cleaning Data Course Project - Week Four
+#
+# Per the course project instructions: URL: https://www.coursera.org/learn/data-cleaning/peer/FIZtT/getting-and-cleaning-data-course-project
+#  -> The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set
 #
 # 1. Combines the test and training data sets to create a single data set
 # 2. Pulls out just the measurements for mean and standard deviation
