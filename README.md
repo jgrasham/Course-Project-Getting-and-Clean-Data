@@ -17,4 +17,4 @@ On the UCI HAR Dataset:
 
 - Appropriately labels the data set with descriptive variable names
 
-- From the data set in step 4, creates a second, independent tidy data set ,averages_data.txt with the average of each variable for each activity and each subject. The output file is called averages_data.txt, and uploaded to this repository.
+- From the data set in step 4, creates a tidy data set named avg_dat.txt with the average of each variable for each activity and each subject. The output file is called avg_dat.txt, and has been uploaded to this repository.
