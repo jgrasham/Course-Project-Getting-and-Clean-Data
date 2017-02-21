@@ -1,8 +1,5 @@
 #
-# The Assignment4.R Run Script for the Getting and Cleaning Data Course Project - Week Four
-#
-# Per the course project instructions: URL: https://www.coursera.org/learn/data-cleaning/peer/FIZtT/getting-and-cleaning-data-course-project
-#  -> The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set
+# The R Run Script for Getting and Cleaning Data Course Project
 #
 # 1. Combines the test and training data sets to create a single data set
 # 2. Pulls out just the measurements for mean and standard deviation
@@ -10,70 +7,84 @@
 # 4. Labels the data set table with more descriptive variable (column) names
 # 5. Makes a tidy data set that calculates the average of each variable for each activity/subject combo
 #
-# Requires that the plyr package to be installed and will
+# Requires that the plyr package is installed and will
 # Use the plyr package for splitting, applying and combining
 # Use install.packages(plyr) if not yet installed
 #
 library(plyr)
 #
 # Read the x_tst table from a local folder location
-# If desired, could substitute choose.files() to select a file
-# would use 'x_tst <- read.table(choose.files())' statement
+# If desired, file name can be selected using the choose.files() option to select a file - see sample code below the read.table statement
 # table is 2947 observations (rows) of 561 variables
 # table is structured with columns labelled: v1 v2 v3 v4 v5 ... v569 each containing a real number
 #
 x_tst <- read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/test/x_test.txt")
+# x_tst <- read.table(choose.files())
 #
 # Read the y_tst table
+# If desired, file name can be selected using the choose.files() option to select a file - see sample code below the read.table statement
 # table is 2947 observations of 1 variable
 # table is structured with one column labelled: v1 containing a number from 1-6
 # the numbers in y_test correspond to the activities in the actvlbls table 
 #
 y_tst<-read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/test/y_test.txt")
+# y_tst <- read.table(choose.files())
 #
 # Read the subj_tst table
+# If desired, file name can be selected using the choose.files() option to select a file - see sample code below the read.table statement
 # table is 2947 observations of 1 variable
 # table is structured with one column labelled: v1 containing a number from 1-24
 # the numbers in subj_tst correspond to the activities in the actvlbls table 
 #
-subj_tst<-read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/test/subject_test.txt")
+subj_tst <-read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/test/subject_test.txt")
+# subj_tst <- read.table(choose.files())
 #
 # Read the training data tables
+# If desired, file name can be selected using the choose.files() option to select a file - see sample code below the read.table statement
 # the x_train file goes into the x_trn table
 # x_trn table is 7352 observations of 561 variables
 # table is structured with columns labelled: v1 v2 v3 v4 v5 ... v569 each containing a real number
 #
-x_trn<-read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/train/X_train.txt")
+x_trn <- read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/train/X_train.txt")
+# x_trn <- read.table(choose.files())
 #
 # the y_train file goes into the y_trn table
+# If desired, file name can be selected using the choose.files() option to select a file - see sample code below the read.table statement
 # y_trn table is 7352 observations of 1 variable
 # table is structured with one column labelled: v1 containing a number from 1-6
 #
 y_trn<-read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/train/y_train.txt")
+# y_trn <- read.table(choose.files())
 #
 # Read the subj_trn table
+# If desired, file name can be selected using the choose.files() option to select a file - see sample code below the read.table statement
 # table is 7352 observations of 1 variable
 # table is structured with one column labelled: v1 containing a number from 1-6
 # the numbers in subj_trn correspond to the activities in the actvlbls table 
 #
-subj_trn<-read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/train/subject_train.txt")
+subj_trn <- read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/train/subject_train.txt")
+# subj_trn <- read.table(choose.files())
 #
 # Read the feature table into table ftrs
+# If desired, file name can be selected using the choose.files() option to select a file - see sample code below the read.table statement
 # the feature table consists of variables v1 and v2
 # v1 = an feature index; v2 = a feature name; these will be used as the new column names
 #
-ftrs<- read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/features.txt")
+ftrs <- read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/features.txt")
+# ftrs <- read.table(choose.files())
 #
 # Read the activity labels into table actvlbls
+# If desired, file name can be selected using the choose.files() option to select a file - see sample code below the read.table statement
 # the actvlbls labels table consists of variables v1 and v2
 # v1 = a activity label index; v2 = an activity name; these will be used as the new activity names
 #
-actvlbls<- read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/activity_labels.txt")
+actvlbls <- read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/activity_labels.txt")
+# actvlbls <- read.table(choose.files())
 #
 # Combine the training and test data tables
-# x_dat will consist of x_tst with x_trn concatenated onto it
-# y_dat will consist of y_tst with y_trn concatenated onto it
-# subj_dat will consist of subj_tst with subj_trn concatenated onto it
+# x_dat will consist of x_tst with x_trn concatenated onto it using rbind
+# y_dat will consist of y_tst with y_trn concatenated onto it using rbind
+# subj_dat will consist of subj_tst with subj_trn concatenated onto it using rbind
 # x_dat will be 10299 observations of 66 variables
 # y_dat will be 10299 observations of 1 variables
 # subj_dat will be 10299 observations of 1 variable
