@@ -1,9 +1,15 @@
 Course Project: Getting & Cleaning Data
 Using the “Human Activity Recognition Using Smartphones Dataset”
 
-<Briefly describe the code book in a couple of sentences – what the project does>
+Description:
+Will take the UCI HAR (Human Activity Recognition) Dataset and 1) Merge the training and the test sets; 2) Extract only
+the mean and standard deviation for each measurement; 3) Substitute descriptive activity names in the data set; 4) Label
+the data set with descriptive variable names; 5) Create a tidy data set named avg_dat.txt with the average of each variable
+for each activity and each subject. 
 
 <Give information on the Data Set to be used – a couple of paragraphs on what the purpose of the data is and how it was created>
+The Data:
+
 
 <Give information on the original data source, URL and the variables contained within it>
 
