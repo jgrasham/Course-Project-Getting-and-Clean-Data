@@ -16,7 +16,7 @@ The basic requirements of this class project will be fulfilled by :
 - creating/submitting the resulting data set that is the output of this project avg_dat.txt
 - creating/submitting a README file (this file) that describes the project
 - creating/submitting a CODEBOOK that describes the data itself
-- creating/submitting an R script that performs the following steps:
+- creating/submitting an Assignment4.R script that performs the following steps:
 
 On the UCI HAR Dataset:
 - Merges the training and the test sets to create one data set
