@@ -12,16 +12,16 @@ Per the course project, the requirements for this project are:
 - "The README that explains the analysis files is clear and understandable."
 - "The work submitted for this project is the work of the student who submitted it."
 
+On the UCI HAR Dataset:
+  See explanations and the full data sets at the following URLs:
+    http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
 The basic requirements of this class project will be fulfilled by :
 - creating/submitting the resulting data set that is the output of this project avg_dat.txt
 - creating/submitting a README file (this file) that describes the project
 - creating/submitting a CODEBOOK that describes the data itself
 - creating/submitting an Assignment4.R script that performs the following steps:
-
-On the UCI HAR Dataset:
-  See explanations and the full data sets at the following URLs:
-    http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
-    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 Steps to be performed:
 - Merges the training and the test sets to create one data set
