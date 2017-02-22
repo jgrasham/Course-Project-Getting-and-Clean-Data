@@ -61,7 +61,7 @@ Information on the data used, the original source, URL and variables:
         - Features are normalized and bounded within [-1,1].
         - Each feature vector is a row on the text file."
 
-Here is the general outline of the Assignment4.R Script and steps to be done on the data by running the script:
+Here is the general outline of the run_analysis.R Script and steps to be done on the data by running the script:
 
 - Script Description and requirements (see the R script)
 - Use the plyr package and the invoke library(plyr) to make active
