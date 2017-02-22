@@ -19,6 +19,11 @@ The basic requirements of this class project will be fulfilled by :
 - creating/submitting an Assignment4.R script that performs the following steps:
 
 On the UCI HAR Dataset:
+  See explanations and the full data sets at the following URLs:
+    http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Steps to be performed:
 - Merges the training and the test sets to create one data set
 - Extracts only the measurements on the mean and standard deviation for each measurement
 - Uses descriptive activity names to name the activities in the data set
