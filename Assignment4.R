@@ -16,7 +16,7 @@ library(plyr)
 # Read the x_tst table from a local folder location
 # If desired, file name can be selected using the choose.files() option to select a file - see sample code below the read.table statement
 # table is 2947 observations (rows) of 561 variables
-# table is structured with columns labelled: v1 v2 v3 v4 v5 ... v569 each containing a real number
+# table is structured with columns labelled: v1 v2 v3 v4 v5 ... v561 each containing a real number
 #
 x_tst <- read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/test/x_test.txt")
 # x_tst <- read.table(choose.files())
@@ -33,8 +33,8 @@ y_tst<-read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/test/
 # Read the subj_tst table
 # If desired, file name can be selected using the choose.files() option to select a file - see sample code below the read.table statement
 # table is 2947 observations of 1 variable
-# table is structured with one column labelled: v1 containing a number from 1-24
-# the numbers in subj_tst correspond to the activities in the actvlbls table 
+# table is structured with one column labelled: v1 containing a number from 1-30 
+# the numbers in subj_tst from 1-30 (represents the # of the participating subject)
 #
 subj_tst <-read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/test/subject_test.txt")
 # subj_tst <- read.table(choose.files())
@@ -43,7 +43,7 @@ subj_tst <-read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/t
 # If desired, file name can be selected using the choose.files() option to select a file - see sample code below the read.table statement
 # the x_train file goes into the x_trn table
 # x_trn table is 7352 observations of 561 variables
-# table is structured with columns labelled: v1 v2 v3 v4 v5 ... v569 each containing a real number
+# table is structured with columns labelled: v1 v2 v3 v4 v5 ... v561 each containing a real number
 #
 x_trn <- read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/train/X_train.txt")
 # x_trn <- read.table(choose.files())
@@ -59,8 +59,8 @@ y_trn<-read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/train
 # Read the subj_trn table
 # If desired, file name can be selected using the choose.files() option to select a file - see sample code below the read.table statement
 # table is 7352 observations of 1 variable
-# table is structured with one column labelled: v1 containing a number from 1-6
-# the numbers in subj_trn correspond to the activities in the actvlbls table 
+# table is structured with one column labelled: v1 containing a number from 1-30
+# the numbers in subj_trn (1-30) represents the # of the participating subject
 #
 subj_trn <- read.table("C://Users/jgras/OneDrive/Documents/data/UCI HAR Dataset/train/subject_train.txt")
 # subj_trn <- read.table(choose.files())
