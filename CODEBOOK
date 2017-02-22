@@ -71,15 +71,15 @@ Here is the general outline of the run_analysis.R Script and steps to be done on
 -      table y_tst will have 2947 obs. (rows) of 1 variable, labelled: v1 containing a number from 1-6
 -      the numbers in y_tst correspond to the activities in the actvlbls table 
 - Read subject_test data into subj_tst from specified path (optionally use choose.files() to select the file you want)
--      table subj_tst will have 2947 obs. (rows) of 1 variable, labelled: v1 containing a number from 1-24
--      the numbers in subj_trn correspond to the activities in the actvlbls table 
+-      table subj_tst will have 2947 obs. (rows) of 1 variable, labelled: v1 containing a number from 1-30
+-      the numbers in subj_trn correspond to the subjects in the tests
 - Read x_train data into x_trn from specified path (optionally use choose.files() to select the file you want)
 -      table x_trn will have 7352 obs. (rows) of 561 variables, labelled: v1 v2 v3 v4 v5 ... v561 each containing a real number
 - Read y_train data into y_trn from specified path (optionally use choose.files() to select the file you want)
 -      table y_trn will have 7352 obs. (rows) of 1 variable, labelled: v1 containing a number from 1-6
 - Read subject_train data into subj_trn from specified path (optionally use choose.files() to select the file you want)
--      table subj_trn will have 7352 obs. (rows) of 1 variable, labelled: v1 containing a number from 1-6
--      the numbers in subj_trn correspond to the activities in the actvlbls table 
+-      table subj_trn will have 7352 obs. (rows) of 1 variable, labelled: v1 containing a number from 1-30
+-      the numbers in subj_trn correspond to the subjects in the tests
 - Read feature table data into table ftrs from specified path (optionally use choose.files() to select the file you want)
 -      the feature table consists of variables v1 and v2
 -      v1 = an feature index; v2 = a feature name; these will be used as the new column names
